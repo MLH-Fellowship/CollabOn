@@ -1,18 +1,36 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <AppBar/>
+      <v-parallax dark height="725" src="https://i.imgur.com/tpqDlUD.png">
+      <v-row align="center" justify="center">
+        <v-col class="text-center" cols="12">
+          <h1 class="display-1 font-weight-thick mb-4 black--text" >CollaBot</h1>
+          <h4 class="subheading black--text">Add it to your organization today!</h4>
+          <div class="my-2">
+            <v-btn large color="black" class="white--text">Install</v-btn>
+          </div>
+        </v-col>
+      </v-row>
+    </v-parallax>
+  </v-app>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import AppBar from '../components/AppBar'
 
 export default {
-  name: 'Home',
+  name: 'App',
+
   components: {
-    HelloWorld
-  }
-}
+    AppBar,
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
+
+<style scoped>
+  html, body {margin: 0; height: 100%; overflow: hidden}
+</style>
