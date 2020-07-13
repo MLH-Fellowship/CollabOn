@@ -1,9 +1,9 @@
 <template>
   <div>
-    <v-avatar color="orange" size="180" class="org-logo">
-        <span class="white--text headline">LOGO</span>
+    <v-avatar size="180" class="org-logo">
+        <img src="https://avatars0.githubusercontent.com/u/65834464?s=200&v=4" alt="avatar">
     </v-avatar>
-    <h1>Bot-Test-Org</h1>
+    <h1>{{$route.params.org}}</h1>
     <MembersList/>
   </div>
 </template>
