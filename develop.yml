@@ -1,0 +1,32 @@
+version: "3"
+services:
+    collabon:
+        container_name: collabon
+        build:
+            context: ./collabon
+        volumes:
+            - ./collabon:/usr/app
+            - /usr/app/node_module
+        ports:
+            - '3000:3000'
+    frontend:
+        container_name: frontend
+        build:
+            context: ./frontend
+            dockerfile: ./frontend/Dockerfile.dev
+        volumes:
+            - ./frontend:/app
+            - /app/node_modules
+        ports:
+            - '80:8080'
+        environment:  
+            - BACKEND_URL=http://localhost:3000/api
+    helper-service:
+        container_name: helper-service
+        build:
+            context: ./helper-service
+        volumes:
+            - ./helper-service:/usr/app
+            - /usr/app/node_module
+        ports:
+            - 4000:4000
