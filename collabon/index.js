@@ -103,6 +103,7 @@ module.exports = app => {
             events.push(row)
         });
         // console.log(events);
+        res.setHeader('Access-Control-Allow-Origin', '*');
         res.send(events)
       });
     });
