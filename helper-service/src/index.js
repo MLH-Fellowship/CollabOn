@@ -1,7 +1,9 @@
 const express = require("express");
 const { Octokit } = require("@octokit/rest");
+const redis = require('redis');
 const app = express();
 const port = 4000;
+const REDIS_PORT = 6379;
 
 const octokit = new Octokit({
   userAgent: "myApp v1.2.3",
@@ -21,6 +23,8 @@ const octokit = new Octokit({
     timeout: 0
   }
 });
+
+const redis_client = redis.createClient(REDIS_PORT);
 
 app.get("/org/:org/info", (req, res) => {
   const org = req.params.org;

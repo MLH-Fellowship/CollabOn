@@ -29,3 +29,7 @@ services:
             - /usr/app/node_module
         ports:
             - 4000:4000
+    redis:
+        image: "redis:alpine"
+        ports:
+            - 6379:6379
