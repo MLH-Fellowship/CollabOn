@@ -19,11 +19,15 @@ export default {
     data() {
       return {
         user_data: [],
-        doneLoading: true
+        doneLoading: true,
+        org: null
       };
     },
+    created() {
+      this.org = this.$route.params.org
+    },
     mounted () {
-      this.$http.get("/Bot-Testing-Org").then(response => {
+      this.$http.get('/org/' + this.org).then(response => {
         this.user_data = response.data;
       });
     }

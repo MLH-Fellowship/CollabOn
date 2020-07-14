@@ -3,7 +3,7 @@
     <v-list-item-group>
       <v-list-item>
         <v-list-item-avatar>
-            <img src="https://i.imgur.com/fxd3f7t.png" alt="avatar">
+            <img :src=activity.avatar alt="avatar">
         </v-list-item-avatar>
         <v-list-item-content>
           <v-list-item-title>{{activity.username}} made a {{activity.action}} to {{activity.repository}}</v-list-item-title>
