@@ -1,0 +1,22 @@
+version: "3"
+services:
+    collabon:
+        container_name: collabon
+        build:
+            context: ./collabon
+        volumes:
+            - ./collabon:/usr/app
+            - /usr/app/node_module
+        ports:
+            - '3000:3000'
+    frontend:
+        container_name: frontend
+        build:
+            context: ./frontend
+        volumes:
+            - ./frontend:/app
+            - /app/node_modules
+        ports:
+            - '8080:8080'
+        environment:  
+            - BACKEND_URL=http://localhost:3000/api
