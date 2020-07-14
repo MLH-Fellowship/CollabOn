@@ -19,7 +19,7 @@
           class="shrink mt-1 hidden-sm-and-down"
           contain
           min-width="100"
-          src="https://i.imgur.com/ry1WQcJ.png"
+          src="https://i.imgur.com/R3ujvf2.png"
           width="100"
         />
       </div>

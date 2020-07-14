@@ -4,7 +4,7 @@
       <v-parallax dark height="725" src="https://i.imgur.com/tpqDlUD.png">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
-          <h1 class="display-1 font-weight-thick mb-4 black--text" >CollaBot</h1>
+          <h1 class="display-1 font-weight-thick mb-4 black--text" >CollabOn</h1>
           <h4 class="subheading black--text">Add it to your organization today!</h4>
           <div class="my-2">
             <v-btn large color="black" class="white--text">Install</v-btn>
