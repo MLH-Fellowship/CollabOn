@@ -16,6 +16,9 @@ services:
         build:
             context: ./frontend
             dockerfile: ./frontend/Dockerfile.dev
+        volumes:
+            - ./frontend:/app
+            - /app/node_modules
         ports:
             - '80:80'
         environment:  
