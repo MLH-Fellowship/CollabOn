@@ -28,12 +28,6 @@ export default {
   data: () => ({
     //
   }),
-  methods: {
-    Redirect()
-    {
-      window.location.href = "https://jsfiddle.net/";
-    }
-  },
 };
 </script>
 
