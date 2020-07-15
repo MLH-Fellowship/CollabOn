@@ -99,7 +99,7 @@ module.exports = app => {
       }
     });
     db.serialize(function() {
-      let sql = `SELECT * from user_data where organization=?`;
+      let sql = `SELECT * from user_data where organization=? ORDER BY createdAt DESC`;
       db.all(sql, [org], (err, rows) => {
         if (err) {
           throw err;
