@@ -4,8 +4,6 @@ services:
         container_name: collabon
         build:
             context: ./collabon
-        logging:
-            driver: none
         volumes:
             - ./collabon:/usr/app
             - /usr/app/node_module
@@ -15,6 +13,11 @@ services:
         container_name: frontend
         build:
             context: ./frontend
+        logging:
+            driver: none
+        links:
+            - collabon
+            - helper-service
         ports:
             - '80:80'
         environment:  
