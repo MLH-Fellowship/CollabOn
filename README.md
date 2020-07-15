@@ -21,3 +21,17 @@ Go to http://localhost to access application
 # Architecture  
 
 ![CollabOn Architecture](CollabOn.svg "CollabOn Architecture")
+
+# Tech Stack
+
+- Front-End : Build using VueJs
+- collabon : NodeJs, Probot, SQLite, GitHub WebHooks
+- helper Service : NodeJs, GitHub API
+
+# License
+ISC
+
+# Authors
+
+- Gautam Mishra
+- Biswajit Ghosh
