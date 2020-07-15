@@ -1,3 +1,9 @@
+
+![License](https://img.shields.io/badge/License-ISC-yellowgreen)
+![Contributors](https://img.shields.io/github/contributors/MLH-Fellowship/CollabOn)
+![Issues](https://img.shields.io/github/issues/MLH-Fellowship/CollabOn?style=flat-square)
+![repo size](https://img.shields.io/github/repo-size/MLH-Fellowship/CollabOn)
+
 # CollabOn
 
 A GitHub App to get updates about teams and members in Organization.
