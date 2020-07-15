@@ -3,6 +3,7 @@
 ![Contributors](https://img.shields.io/github/contributors/MLH-Fellowship/CollabOn)
 ![Issues](https://img.shields.io/github/issues/MLH-Fellowship/CollabOn?style=flat-square)
 ![repo size](https://img.shields.io/github/repo-size/MLH-Fellowship/CollabOn)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FMLH-Fellowship%2FCollabOn)]
 
 # CollabOn
 
