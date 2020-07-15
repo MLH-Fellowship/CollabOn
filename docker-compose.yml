@@ -4,6 +4,8 @@ services:
         container_name: collabon
         build:
             context: ./collabon
+        logging:
+            driver: none
         volumes:
             - ./collabon:/usr/app
             - /usr/app/node_module
@@ -20,16 +22,23 @@ services:
             - '80:8080'
         environment:  
             - BACKEND_URL=http://localhost:3000/api
+    redis:
+        image: "redis:alpine"
+        container_name: cache
+        logging:
+            driver: none
+        ports:
+            - 6379:6379
     helper-service:
         container_name: helper-service
         build:
             context: ./helper-service
+        depends_on:
+            - redis
+        links:
+            - redis
         volumes:
             - ./helper-service:/usr/app
             - /usr/app/node_module
         ports:
             - 4000:4000
-    redis:
-        image: "redis:alpine"
-        ports:
-            - 6379:6379
