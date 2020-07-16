@@ -9,7 +9,7 @@
 CollabOn integrates into your organization to give you a live feed of what's happening in your organization.  
 It will track the pull requests, issues, comments, and pushed commits. 
 
-<div style="text-align:center"><img width="80%" src="https://i.imgur.com/kVwYWaI.jpg" /></div> 
+<div style="text-align:center"><img width="80%" src="https://i.imgur.com/26rrXjM.png" /></div> 
 
 
 # Installation
