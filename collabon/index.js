@@ -92,6 +92,7 @@ module.exports = app => {
   // Add a feed route
   router.get('/org/:org', (req, res) => {
     const org = req.params.org;
+    const page = req.query.page | 1;
     events = [];
     let db = new sqlite3.Database('./db/events.db', sqlite3.OPEN_READWRITE, (err) => {
       if (err) {
@@ -109,6 +110,9 @@ module.exports = app => {
         });
         // console.log(events);
         res.setHeader('Access-Control-Allow-Origin', '*');
+        if(events.length > 150) {
+          events.splice(150);
+        }
         res.send(events)
       });
     });
