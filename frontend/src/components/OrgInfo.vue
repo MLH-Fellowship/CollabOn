@@ -26,10 +26,10 @@ export default {
     },
     mounted() {
       axios
-        .get('http://localhost:4000/org/' + this.org + '/info')
+        .get('http://35.188.137.58:4000/org/' + this.org + '/info')
         .then(response => (this.info = response.data));
       axios
-        .get('http://localhost:4000/org/' + this.org + '/members')
+        .get('http://35.188.137.58:4000/org/' + this.org + '/members')
         .then(response => (this.members = response.data));
     },
     components: {

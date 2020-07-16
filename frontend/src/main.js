@@ -7,7 +7,7 @@ import vuetify from './plugins/vuetify';
 Vue.config.productionTip = false
 
 const http = axios.create({
-  baseURL: process.env.BACKEND_URL ? process.env.BACKEND_URL : 'http://localhost:3000/api',
+  baseURL: 'http://35.188.137.58:3000/api',
 });
 
 Vue.prototype.$http = http;
