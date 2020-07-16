@@ -1,11 +1,8 @@
 <template>
     <v-list>
-        <Member/>
-        <Member/>
-        <Member/>
-        <Member/>
-        <Member/>
-        <Member/>
+        <div v-for="member in members" :key="member.index">
+          <Member :member='member'/>
+        </div>
     </v-list>
 </template>
 
@@ -16,7 +13,8 @@ export default {
     name: 'MembersList',
     components: {
         Member
-    }
+    },
+    props: ['members']
 }
 </script>
 

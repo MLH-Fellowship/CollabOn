@@ -4,7 +4,7 @@
       color="dark"
       dark
     >
-      <div class="d-flex align-center">
+      <div @click="Redirect" class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
@@ -37,5 +37,11 @@ export default {
   data: () => ({
     //
   }),
+  methods: {
+  Redirect()
+    {
+      window.location.href = "/";
+    }
+  },
 };
 </script>

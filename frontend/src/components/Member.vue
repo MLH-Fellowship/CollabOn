@@ -2,10 +2,10 @@
     <v-list-item-group>
         <v-list-item>
             <v-list-item-avatar>
-                <img src="https://avatars2.githubusercontent.com/u/29784549?s=460&u=813ec654e511cae8fe8302eae1a0153578e98d62&v=4" alt="avatar">
+                <img :src=member.avatar_url alt="avatar">
             </v-list-item-avatar>
             <v-list-item-content>
-                mgautam98
+                {{member.login}}
             </v-list-item-content>
         </v-list-item>
     </v-list-item-group>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-
+    props: ['member']
 }
 </script>
 
