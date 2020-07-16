@@ -110,8 +110,8 @@ module.exports = app => {
         });
         // console.log(events);
         res.setHeader('Access-Control-Allow-Origin', '*');
-        if(row.length > 150) {
-          row.splice(150);
+        if(events.length > 150) {
+          events.splice(150);
         }
         res.send(events)
       });
